@@ -5,7 +5,7 @@ This is an small mod, let me know, if you got issues.
 
 # Installation
 
-Download it [here](somewierdlink.com) and unzip it to your mod folder.  
+Download it [here](https://github.com/johannwagner/sc-betterstats/raw/master/versions/sc-betterstats-v0.01.zip) and unzip it to your mod folder.  
 Further Instructions: [Modding-Wiki](https://github.com/hovgaardgames/startupcompany/wiki/Modding#install-mods)
 
 # Features
