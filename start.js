@@ -53,7 +53,6 @@ exports.initialize = (modPath) =>{
     ]
 };
 
-
 exports.onLoadGame = settings => {};
 exports.onNewHour = settings => {};
 exports.onNewDay = settings => {};
