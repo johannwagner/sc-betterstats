@@ -1,0 +1,34 @@
+<h1>
+    <i class="fa fa-line-chart"></i>
+    BetterStats
+    <i class="fa fa-times pull-right close-button" close-all-ui></i>
+</h1>
+
+<div class="padding" style="overflow: auto; height: 490px;"> 
+
+	<table class="medium">
+		<thead>
+			<tr>
+				<th></th>
+				<th>Name</th>
+				<th>Assigned Employees</th>
+				<th>Production per Hour</th>
+				<th>Production per Day</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr ng-repeat="(id, component) in betterstatsCtrl.components | orderBy : '-productionPerHour'" ng-If="component.unlockedComponent == true">
+			
+				<td>
+					<img width="40px" src="{{component.icon}}">
+				</td>
+				<td>{{component.name}}</td>
+				<td>{{component.employeeAssigned}}</td>
+				<td ng-If="component.productionPerHour == 0" style="color:red;">{{component.productionPerHour}}</td>
+				<td ng-If="component.productionPerHour != 0" style="color:green;">{{component.productionPerHour}}</td>
+				<td ng-If="component.productionPerDay == 0" style="color:red;">{{component.productionPerDay}}</td>
+				<td ng-If="component.productionPerDay != 0" style="color:green;">{{component.productionPerDay}}</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
